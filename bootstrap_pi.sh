@@ -1,5 +1,7 @@
 #!/bin/bash
-set -ex
+# download:
+# curl -fsSL -o ~/bootstrap_pi.sh https://raw.githubusercontent.com/ascharlton/tools/main/bootstrap_pi.sh
+set -e
 
 echo "=== Raspberry Pi Bootstrap ==="
 
@@ -39,7 +41,7 @@ else
     cat ~/.ssh/id_ed25519.pub
     echo
     echo "Go to: https://github.com/settings/keys → New SSH key"
-    #exit 1
+    exit 1
 fi
 
 echo "clone repos"
