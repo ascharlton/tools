@@ -1,6 +1,7 @@
 #!/bin/bash
 # download:
 # curl -fsSL -o ~/bootstrap_pi.sh https://raw.githubusercontent.com/ascharlton/tools/main/bootstrap_pi.sh
+# chmod +x bootstrap_pi.sh
 set -e
 
 echo "=== Raspberry Pi Bootstrap ==="
