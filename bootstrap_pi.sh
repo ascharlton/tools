@@ -26,6 +26,11 @@ ssh-add ~/.ssh/id_ed25519
 
 # --- Test GitHub connection ---
 echo "Testing GitHub SSH connection..."
+mkdir -p ~/.ssh
+touch ~/.ssh/known_hosts
+ssh-keygen -F github.com || ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+
 if ssh -o BatchMode=yes -T git@github.com 2>&1 | grep -q "successfully authenticated"; then
     echo "✅ SSH authentication with GitHub works!"
 else
