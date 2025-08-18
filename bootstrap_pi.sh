@@ -39,7 +39,7 @@ else
     cat ~/.ssh/id_ed25519.pub
     echo
     echo "Go to: https://github.com/settings/keys → New SSH key"
-    exit 1
+    #exit 1
 fi
 
 # --- Clone or update tools repo ---
