@@ -5,7 +5,7 @@ echo "=== Raspberry Pi Bootstrap ==="
 
 # --- Install required packages ---
 sudo apt update
-sudo apt install -y git openssh-client curl jq
+sudo apt install -y vim git openssh-client curl jq
 
 # --- Configure Git ---
 git config --global user.name "ascharlton"
