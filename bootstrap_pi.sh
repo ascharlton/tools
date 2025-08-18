@@ -42,6 +42,7 @@ else
     #exit 1
 fi
 
+echo "clone repos"
 # --- Clone or update tools repo ---
 mkdir -p ~/repos
 cd ~/repos
