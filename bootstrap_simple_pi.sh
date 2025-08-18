@@ -26,7 +26,7 @@ ssh -o BatchMode=yes -T git@github.com 2>&1 | grep -q "successfully authenticate
 
 # Clone or update tools repo
 REPO_DIR="$HOME/repos/tools"
-mkdir -p "$HOME/repos"
+mkdir -p "$REPO_DIR"
 if [ ! -d "$REPO_DIR" ]; then
     git clone git@github.com:ascharlton/tools.git "$REPO_DIR"
 else
